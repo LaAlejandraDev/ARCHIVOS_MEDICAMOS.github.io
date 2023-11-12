@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicamos tu Vida</title>
+    <link href="../../img/LogoPNG.png" rel="shorcut icon">
+    <link rel="stylesheet" href="../../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/estiloCentral.css">
+    <link rel="stylesheet" href="../../css/estiloC.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Barra de Naviegación -->
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary m-2 rounded">
+                <div class="container-fluid">
+                    <img src="../../img/LogoPNG.png" alt="Logo" width="100">
+                    <ul class="navbar-nav me-auto p-4">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="../../contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="LoginCentral.html">SICEFA Central</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="LoginSucursal.html">SICEFA Sucursal</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido* -->
+    <div class="col-md-5 container-fluid d-flex justify-content-center align-items-center p-5 bg-white mt-4" id="cont">
+        <div>
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="../../img/azul-login.png" alt="login-icon" id="login-icon">
+            </div>
+            <div class="col-md-12 mt-2 d-flex text-align-center justify-content-center">
+                <h1>Iniciar Sesión</h1>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h4>SICEFA Central</h4>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-5">
+                <h5>ADMINISTRADOR CENTRAL</h5>
+            </div>
+            <script src="../Logins/sesionC.js"></script>
+            <div class="col-lg-12 container-fluid d-flex justify-content-center align-items-center mt-2">
+                <form action="INICIO SESION" name="form">
+                    <div class="input-group">
+                        <div class="input-group-text bg-primary">
+                            <img src="../../img/username-icon.svg" alt="" style="height: 1rem;">
+                        </div>
+                        <div>
+                            <input class="form-control" type="text" id="login" placeholder="ADMC">
+                            <!-- Se agregó id="login" aquí -->
+                        </div>
+                    </div>
+                    <div class="input-group mt-4">
+                        <div class="input-group-text bg-primary">
+                            <img src="../../img/password-icon.svg" alt="" style="height: 1rem;">
+                        </div>
+                        <div>
+                            <input class="form-control" type="password" id="password" placeholder="Contraseña">
+                            <!-- Se agregó id="password" aquí -->
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <input class="btn btn-primary p-2 mt-5" type="button" value="INICIAR SESION" onclick="ir()">
+                </form>
+            </div> <!--div form-->
+        </div><!--div son-->
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Pie de página -->
+    <footer class="p-4 mt-4">
+        <div class="footer-content">
+            <h5 style="font-size: 120%;">Medicamos tu Vida S.A</h5>
+            <ul class="redes">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom pt-4">
+            <p>Copyright &copy;2023 Medicamos tu Vida S.A. Designed by <span>Services Programmer</span></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js"></script>
+
+</body>
+</html>

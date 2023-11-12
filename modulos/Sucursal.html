@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicamos tu Vida</title>
+    <script src="controllerSucursal.js"></script>
+    <link rel="stylesheet" href="../css/formulariosBonitos.css">
+    <link href="../img/LogoPNG.png" rel="shorcut icon">
+    <link rel="stylesheet" href="../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estiloSucursal.css">
+    <link rel="stylesheet" href="../css/estiloC.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Barra de Naviegación -->
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-expand-lg navbar-dark bg-primary m-2 rounded-3">
+                <div class="container-fluid col-lg-2">
+                    <a class="navbar-brand" href="">
+                        <img src="../img/LogoPNG.png" alt="Logo" width="100">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse col-lg-10" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active text-white" aria-current="page" href="Sucursal.html">Home</a>
+                        <a class="nav-link text-white" onclick="cargarModuloPedidos()">Pedidos</a>
+                        <a class="nav-link text-white" onclick="cargarModuloVentas()">Ventas</a>
+                        <a class="nav-link text-white" onclick="cargarModuloEmpleados()">Empleados</a>
+                        <a class="nav-link text-white" onclick="cargarModuloBusquedaPro()">Productos</a>
+                        <a class="nav-link text-white" onclick="cargarModuloClientes()">Clientes</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <img src="../img/logout.png" alt="Logo" width="40">
+                    <a class="nav-link active text-white me-5" aria-current="page" id="enlace">Cerrar Sesión</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido* -->
+    <div id="contenedorPrincipal">
+        <div class="container-fluid text-center mt-4">
+            <h1>¡Bienvenido!</h1>
+            <h3>a SICEFA Sucursal</h3>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="../img/fondo.jpg" alt="" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="p-4 mt-5">
+        <div class="footer-content">
+            <h5 style="font-size: 110%;">Medicamos tu Vida S.A</h5>
+            <ul class="redes">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom pt-4">
+            <p>Copyright &copy;2023 Medicamos tu Vida S.A. Designed by <span>Services Programmer</span></p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

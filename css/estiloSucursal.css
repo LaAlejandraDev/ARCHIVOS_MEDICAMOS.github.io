@@ -1,0 +1,85 @@
+body{
+    background: rgb(255, 255, 255);
+}
+
+nav{
+    background: rgb(34, 170, 138);
+}
+
+footer{
+    background: rgb(0, 107, 32);
+    height: auto;
+    width: 100;
+    font-family: "Open Sans";
+    color: aliceblue;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3 rem 0;
+}
+
+.redes li{
+    margin: 0 10px;
+
+}
+
+.redes a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.redes a i{
+    font-size: 1rem;
+    transition: color .4s ease;
+}
+
+.redes a:hover i{
+    color: rgb(0, 255, 0);
+}
+
+.footer-bottom{
+    background: rgb(11, 153, 87);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .6;
+    font-weight: 200;
+}
+
+.card img{
+    transition: all 0.2s ease-in-out;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+}

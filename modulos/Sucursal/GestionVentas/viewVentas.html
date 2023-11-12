@@ -1,0 +1,93 @@
+<!--Modulo de Ventas-->
+<link rel="stylesheet" href="../../../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<div class="container-fluid row d-flex justify-content-center m-2">
+    <style>
+        .col-md-6 input{
+            border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+        }
+        .col-md-4 input{
+            border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+        }
+        .col-md-4 select{
+            border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+        }
+    </style>
+    <div class="card col-lg-10 m-2 p-4 container-sm container-lg container-md shadow mb-5">
+        <h2 class="text-center">Gestión de Ventas</h2>
+        <div class="row g-3">
+            <div class="col-md-6 pp">
+                <label for="txtVentaId" class="mt-2"><strong>Id Venta</strong></label><br>
+                <input id="txtVentaId" type="text" readonly class="mt-2 w-100 text-center" placeholder="ID de la venta">
+            </div>
+            <div class="col-md-6 pp">
+                <label for="txtProducto" class="mt-2"><strong>Producto</strong></label><br>
+                <input id="txtProducto" type="text" class="mt-2 w-100 text-center" placeholder="Nombre del producto" >
+            </div>
+            <div class="col-md-6 pp">
+                <label for="txtCanti" class="mt-2"><strong>Cantidad</strong></label><br>
+                <input id="txtCanti" type="number" class="mt-2 w-100 text-center" placeholder="Cantidad" >
+            </div>
+            <div class="col-md-6 pp">
+                <label for="txtPrecio" class="mt-2"><strong>Precio</strong></label><br>
+                <input id="txtPrecio" type="text" class="mt-2 w-100 text-center " placeholder="Precio">
+            </div>
+            <div class="col-md-6 pp">
+                <label for="txtFecha" class="mt-2"><strong>Fecha</strong></label><br>
+                <input id="txtFecha" type="date" class="mt-2 w-100 text-center " placeholder="Fecha">
+            </div>
+            <div class="col-md-6 pp">
+                <label for="txtHora" class="mt-2"><strong>Hora</strong></label><br>
+                <input id="txtHora" type="time" class="mt-2 w-100 text-center" placeholder="Hora">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtEmpleado" class="mt-2"><strong>Nombre Empleado</strong></label><br>
+                <input id="txtEmpleado" type="text" class="mt-2 w-100 text-center" placeholder="Nombre del empleado">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtCliente" class="mt-2"><strong>Nombre Cliente</strong></label><br>
+                <input id="txtCliente" type="text" class="mt-2 w-100 text-center" placeholder="Nombre del cliente">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtEstatus" class="mt-2"><strong>Estatus</strong></label><br>
+                <select class="form-select form-select-sm col-md-6 mt-2 text-center" id="txtEstatus" name="txtEstatus">
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option>
+                </select>
+            </div> 
+        </div>
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-5 btn  btn-lg" onclick="moduloVentas.addVentas()" id="btnAdd"
+            style="background-color: #29a064;" >Registrar</button>
+            <button class="mt-5 btn  btn-lg" onclick="moduloVentas.clean()" id="btnClean"
+            style="background-color: #00b9ce;">Limpiar</button>
+            <button class="mt-5 btn btn-lg disabled" onclick="moduloVentas.updateVentas();" id="btnUpdate"
+            style="background-color: #ffee00;">Actualizar</button>
+            <button class="mt-5 btn btn-lg disabled" onclick="moduloVentas.deleteVentas()" id="btnDelete"
+            style="background-color: #eb3e3e;">Eliminar</button>
+        </div>
+    </div>
+
+    <div class="card col-lg-10 p-4 m-2 shadow mb-5 rounded table-responsive-xxl">
+            <div class="d-flex m-2 justify-content-center">
+                <label for="txtBusquedaVenta" class="form-label mx-3 mt-2 text-center"><strong>Buscar Ventas:</strong></label>
+                <input type="text" id="txtBusquedaVenta" style="border: 1px solid rgb(166, 172, 172); border-radius: 10px;">
+                <button class="btn btn-md w-25 mx-2" style="background-color: #00b9ce;"s onclick="moduloVentas.buscarVenta();">Buscar</button>
+            </div>
+        <table class="table table-hover mt-3">
+            <thead class="table-dark text-center">
+                <tr class="text-center">
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Fecha</th>
+                    <th>Cliente</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody id="tblVentas" class="text-center" style=" border-bottom: 1px">
+
+            </tbody>
+        </table>
+    </div>
+</div>

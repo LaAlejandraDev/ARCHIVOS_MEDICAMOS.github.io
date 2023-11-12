@@ -1,0 +1,170 @@
+<!--Modulo de Gestion de clientes-->
+<link rel="stylesheet" href="../../../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<div class="container-fluid row d-flex justify-content-center m-2">
+    <style>
+        .col-md-4 input{
+            border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+        }
+        .col-md-4 select{
+            border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+        }
+        .col-md-3 input{
+            border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+        }
+        .col-md-3 select{
+            border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+        }
+        .col-md-6 input{
+            border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+        }
+        .col-md-6 select{
+            border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+        }
+    </style>
+<div class="card col-lg-10 m-2 p-4 shadow p-3 mb-5 rounded">
+    <h2 class="text-center h2">Gestión de Clientes</h2>
+    <div class="row g-3">
+        <div class="col-md-4 pp">
+            <label for="txtIdC" class="mt-2"><strong>Id Empleado</strong></label>
+            <input id="txtIdC" type="text" readonly class="mt-2 w-100 text-center"
+                placeholder="ID del cliente">
+        </div>
+        <div class="col-md-4 pp">
+            <label for="txtNombre" class="mt-2"><strong>Nombre</strong></label><br>
+            <input id="txtNombre" type="text" class="mt-2 w-100 text-center" placeholder="Nombre">
+        </div>
+        <div class="col-md-4 pp">
+            <label for="txtApt" class="mt-2"><strong>Apellido Paterno</strong></label><br>
+            <input id="txtApt" type="text" class="mt-2 w-100 text-center" placeholder="Apellido Paterno">
+        </div>
+        <div class="col-md-4 pp">
+            <label for="txtAmt" class="mt-2"><strong>Apellido Materno</strong></label><br>
+            <input id="txtAmt" type="text" class="mt-2 w-100 text-center" placeholder="Apellido Materno">
+        </div>
+        <div class="col-md-4">
+            <label class="mt-2"><strong>Género</strong></label><br>
+            <select class="form-select form-select-sm col-md-6 mt-2 text-center" id="txtGenero"
+                name="txtGenero">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
+        <div class="col-md-4 pp">
+            <label for="txtFnac" class="mt-2"><strong>Fecha de Nacimiento</strong></label><br>
+            <input id="txtFnac" type="text" class="mt-2 w-100 text-center" placeholder="Fecha de Nacimiento">
+        </div>
+        <div class="col-md-4 pp">
+            <label for="txtRFC" class="mt-2"><strong>RFC</strong></label><br>
+            <input id="txtRFC" type="text" class="mt-2 w-100 text-center" placeholder="RFC">
+        </div>
+        <div class="col-md-4 pp">
+            <label for="txtCURP" class="mt-2"><strong>CURP</strong></label><br>
+            <input id="txtCURP" type="text" class="mt-2 w-100 text-center" placeholder="CURP">
+        </div>
+        <div class="col-md-4 pp">
+            <label for="imgAdd" class="mt-2"><strong>Foto</strong></label><br>
+            <input id="imgAdd" name="imgAdd" type="file" class="mt-2 w-100 text-center" style="border: none;">
+        </div>
+        <div class="col-md-4 pp">
+            <label for="txtDmc" class="mt-2"><strong>Domicilio</strong></label><br>
+            <input id="txtDmc" type="text" class="mt-2 w-100 text-center" placeholder="Domicilio">
+        </div>
+        <div class="col-md-4 pp">
+            <label for="txtCP" class="mt-2"><strong>Código Postal</strong></label><br>
+            <input id="txtCP" type="text" class="mt-2 w-100 text-center" placeholder="Código Postal">
+        </div>
+        <div class="col-md-4 pp">
+            <label for="txtCiu" class="mt-2"><strong>Ciudad</strong></label><br>
+            <input id="txtCiu" type="text" class="mt-2 w-100 text-center" placeholder="Ciudad">
+        </div>
+        <div class="col-md-4">
+            <label for="txtEDO" class="mt-2 "><strong>Estado</strong></label><br>
+            <select id="txtEDO" class="form-select form-select-sm col-md-6 mt-2 w-100 text-center">
+                <option value="" disabled selected>Selecciona un estado</option>
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Baja California">Baja California</option>
+                <option value="Baja California Sur">Baja California Sur</option>
+                <option value="Campeche">Campeche</option>
+                <option value="Chiapas">Chiapas</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Coahuila">Coahuila</option>
+                <option value="Colima">Colima</option>
+                <option value="Durango">Durango</option>
+                <option value="Estado de México">Estado de México</option>
+                <option value="Guanajuato">Guanajuato</option>
+                <option value="Guerrero">Guerrero</option>
+                <option value="Hidalgo">Hidalgo</option>
+                <option value="Jalisco">Jalisco</option>
+                <option value="Michoacán">Michoacán</option>
+                <option value="Morelos">Morelos</option>
+                <option value="Nayarit">Nayarit</option>
+                <option value="Nuevo León">Nuevo León</option>
+                <option value="Oaxaca">Oaxaca</option>
+                <option value="Puebla">Puebla</option>
+                <option value="Querétaro">Querétaro</option>
+                <option value="Quintana Roo">Quintana Roo</option>
+                <option value="San Luis Potosí">San Luis Potosí</option>
+                <option value="Sinaloa">Sinaloa</option>
+                <option value="Sonora">Sonora</option>
+                <option value="Tabasco">Tabasco</option>
+                <option value="Tamaulipas">Tamaulipas</option>
+                <option value="Tlaxcala">Tlaxcala</option>
+                <option value="Veracruz">Veracruz</option>
+                <option value="Yucatán">Yucatán</option>
+                <option value="Zacatecas">Zacatecas</option>
+            </select>
+        </div>
+        <div class="col-md-4 pp">
+            <label for="txtTel" class="mt-2"><strong>Teléfono</strong></label><br>
+            <input id="txtTel" type="text" class="mt-2 w-100 text-center" placeholder="Teléfono">
+        </div>
+        <div class="col-md-4 pp">
+            <label for="txtFechaR" class="mt-2"><strong>Fecha Registro</strong></label><br>
+            <input id="txtFechaR" type="date" class="mt-2 w-100 text-center" placeholder="Fecha de Registro">
+        </div>
+        <div class="col-md-6 pp">
+            <label for="txtCoEl" class="mt-2"><strong>Correo Electrónico</strong></label><br>
+            <input id="txtCoEl" type="text" class="mt-2 w-100 text-center" placeholder="Correo Electrónico">
+        </div>
+        <div class="col-md-6 pp">
+            <label for="txtEstatus" class="mt-2"><strong>Estatus</strong></label><br>
+            <select class="form-select form-select-sm col-md-6 mt-2 text-center" id="txtEstatus" name="txtEstatus">
+                <option value="Activo">Activo</option>
+                <option value="Inactivo">Inactivo</option>
+            </select>
+        </div>
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-lg" style="background-color: #29a064;"  onclick="moduloClientes.addClientes();"
+                id="btnAdd">Registrar</button>
+            <button class="mt-2 btn btn-lg" style="background-color: #00b9ce;" onclick="moduloClientes.clean();" id="btnClean">Limpiar</button>
+            <button class="mt-2 btn btn-lg disabled" style="background-color: #ffee00;" onclick="moduloClientes.updateClientes();"
+                id="btnUpdate">Modificar</button>
+            <button class="mt-2 btn btn-lg disabled" style="background-color: #eb3e3e;" onclick="moduloClientes.deleteClientes();"
+                id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+</div>
+<div class="card col-lg-10 p-4 m-2 shadow mb-5 rounded table-responsive-xxl">
+    <div class="d-flex m-2 justify-content-center">
+        <label for="txtBusquedaClientes" class="form-label mx-3 text-center"><strong>Buscar Clientes:</strong></label>
+        <input type="text" id="txtBusquedaClientes" style="border: 1px solid rgb(166, 172, 172);border-radius: 10px; text-align: center;">
+        <button class="btn btn-md w-25 mx-2" onclick="moduloClientes.buscarClientes();" style="background-color: #00b9ce;">Buscar</button>
+    </div>
+    <table class="table table-hover mt-3">
+        <thead class="table-dark text-center">
+            <tr class="text-center">
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Genero</th>
+                <th>Telefono</th>
+                <th>Estatus</th>
+            </tr>
+        </thead>
+        <tbody id="tblClientes" class="text-center" style=" border-bottom: 1px">
+
+        </tbody>
+    </table>
+</div>
+</div>

@@ -1,0 +1,14 @@
+#cont {
+    border-radius: 30px;
+    box-shadow: 0 0 10px #505050;
+}
+
+#login-icon{
+    height: 7rem;
+}
+
+#contS {
+    border-radius: 30px;
+    box-shadow: 0 0 10px #505050;
+    align-content: center;
+}

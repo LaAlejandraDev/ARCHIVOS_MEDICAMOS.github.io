@@ -1,0 +1,92 @@
+[
+    {
+        "idProducto": "1",
+        "nombre": "Paracetamol",
+        "nombreGene": "Acetaminophen",
+        "formaFarma": "Tableta",
+        "unidadMe": "30",
+        "codigoBarras": "123456789",
+        "estatus": "Activo"
+    },
+    {
+        "idProducto": "2",
+        "nombre": "Ibuprofeno",
+        "nombreGene": "Ibuprofen",
+        "formaFarma": "Cápsula",
+        "unidadMe": "20",
+        "codigoBarras": "987654321",
+        "estatus": "Activo"
+    },
+    {
+        "idProducto": "3",
+        "nombre": "Omeprazol",
+        "nombreGene": "Omeprazole",
+        "formaFarma": "Tableta",
+        "unidadMe": "14",
+        "codigoBarras": "456789123",
+        "estatus": "Activo"
+    },
+    {
+        "idProducto": "4",
+        "nombre": "Loratadina",
+        "nombreGene": "Loratadine",
+        "formaFarma": "Tableta",
+        "unidadMe": "30",
+        "codigoBarras": "789123456",
+        "estatus": "Activo"
+    },
+    {
+        "idProducto": "5",
+        "nombre": "Amoxicilina",
+        "nombreGene": "Amoxicillin",
+        "formaFarma": "Cápsula",
+        "unidadMe": "10",
+        "codigoBarras": "321654987",
+        "estatus": "Activo"
+    },
+    {
+        "idProducto": "6",
+        "nombre": "Aspirina",
+        "nombreGene": "Aspirin",
+        "formaFarma": "Tableta",
+        "unidadMe": "50",
+        "codigoBarras": "654987321",
+        "estatus": "Activo"
+    },
+    {
+        "idProducto": "7",
+        "nombre": "Simvastatina",
+        "nombreGene": "Simvastatin",
+        "formaFarma": "Tableta",
+        "unidadMe": "30",
+        "codigoBarras": "789456123",
+        "estatus": "Activo"
+    },
+    {
+        "idProducto": "8",
+        "nombre": "Metformina",
+        "nombreGene": "Metformin",
+        "formaFarma": "Tableta",
+        "unidadMe": "60",
+        "codigoBarras": "951753852",
+        "estatus": "Activo"
+    },
+    {
+        "idProducto": "9",
+        "nombre": "Losartán",
+        "nombreGene": "Losartan",
+        "formaFarma": "Tableta",
+        "unidadMe": "28",
+        "codigoBarras": "753951852",
+        "estatus": "Activo"
+    },
+    {
+        "idProducto": "10",
+        "nombre": "Atorvastatina",
+        "nombreGene": "Atorvastatin",
+        "formaFarma": "Tableta",
+        "unidadMe": "40",
+        "codigoBarras": "852963147",
+        "estatus": "Activo"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "idSucursal": 1,
+        "nombreSucursal": "Centro",
+        "nombreTitular": "Alejandra Mendez",
+        "RFCtitular": "HESAA040807R2",
+        "domicilio": "Los Olimpos #56",
+        "colonia": "Centro",
+        "ciudad": "León",
+        "estado": "Guanajuato",
+        "telefono": "4772583601",
+        "codPostal": 36275,
+        "latitud": "1598523523",
+        "longitud": "7894561230",
+        "estatus": "Activo"
+    },
+    {
+        "idSucursal": 2,
+        "nombreSucursal": "Centro Max",
+        "nombreTitular": "Salvador Luna",
+        "RFCtitular": "SALUN040807T8",
+        "domicilio": "Via Morelos #106",
+        "colonia": "Centro Max",
+        "ciudad": "León",
+        "estado": "Guanajuato",
+        "telefono": "4772583602",
+        "codPostal": 36275,
+        "latitud": "3216549870",
+        "longitud": "1594872360",
+        "estatus": "Activo"
+    },
+    {
+        "idSucursal": 3,
+        "nombreSucursal": "Plaza Mayor",
+        "nombreTitular": "Rodolfo Cortes",
+        "RFCtitular": "ROCOT040807R2",
+        "domicilio": "Futurama Monterrey #62",
+        "colonia": "Plaza Mayor",
+        "ciudad": "León",
+        "estado": "Guanajuato",
+        "telefono": "4772583603",
+        "codPostal": 36275,
+        "latitud": "1023654789",
+        "longitud": "2365897410",
+        "estatus": "Activo"
+    }
+]

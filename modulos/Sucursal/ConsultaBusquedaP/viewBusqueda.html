@@ -1,0 +1,70 @@
+<!--Modulo de Gestion de clientes-->
+<link rel="stylesheet" href="../../../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<div class="container-fluid row d-flex justify-content-center m-2">
+    <style>
+        .col-md-4 input {
+            border: 1px solid rgb(166, 172, 172);
+            height: 50%;
+            border-radius: 10px;
+        }
+
+        .col-md-4 select {
+            border: 1px solid rgb(166, 172, 172);
+            height: 50%;
+            border-radius: 10px;
+        }
+
+        .col-md-3 input {
+            border: 1px solid rgb(166, 172, 172);
+            height: 50%;
+            border-radius: 10px;
+        }
+
+        .col-md-3 select {
+            border: 1px solid rgb(166, 172, 172);
+            height: 50%;
+            border-radius: 10px;
+        }
+
+        .col-md-6 input {
+            border: 1px solid rgb(166, 172, 172);
+            height: 50%;
+            border-radius: 10px;
+        }
+
+        .col-md-6 select {
+            border: 1px solid rgb(166, 172, 172);
+            height: 50%;
+            border-radius: 10px;
+        }
+    </style>
+
+    <div class="card col-lg-11 p-4 m-2 shadow mb-5 rounded table-responsive-xxl">
+        <h2 class="text-center h2">Consulta y busqueda de medicamentos</h2>
+        <div class="d-flex m-2 justify-content-center">
+            <label for="txtBusquedaCliente" class="form-label mx-3 text-center"><strong>Buscar
+                    Productos:</strong></label>
+            <input type="text" id="txtBusqueda"
+                style="border: 1px solid rgb(166, 172, 172);border-radius: 10px; text-align: center;">
+            <button class="btn btn-md w-25 mx-2" onclick="moduloBusquedaPro.busquedaPro();"
+                style="background-color: #00b9ce;">Buscar</button>
+        </div>
+        <table class="table table-hover mt-3">
+            <thead class="table-dark text-center">
+                <tr class="text-center">
+                    <th>Id Producto</th>
+                    <th>Nombre</th>
+                    <th>Nombre generico</th>
+                    <th>Presentación</th>
+                    <th>Unidades en envase</th>
+                    <th>Codigo de barras</th>
+                    <th>Estatus</th>
+
+                </tr>
+            </thead>
+            <tbody id="tblBusqueda" class="text-center" style=" border-bottom: 1px">
+
+            </tbody>
+        </table>
+    </div>
+</div>

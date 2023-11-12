@@ -1,0 +1,144 @@
+<!--Modulo de Productos-->
+<link rel="stylesheet" href="../../../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<div class="container-fluid row d-flex justify-content-center m-2">
+    <div class="card col-lg-10 m-2 p-4 shadow p-3 mb-5 rounded">
+        <style>
+            .col-md-4 input{
+                border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+            }
+            .col-md-4 select{
+                border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+            }
+            .col-md-3 input{
+                border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+            }
+            .col-md-3 select{
+                border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+            }
+        </style>
+        <h2 class="text-center">Gestión de Sucursales</h2>
+        <div class="row g-3" >
+            <div class="col-md-4 pp">
+                <label for="txtIdSucu" class="mt-2"><strong>Id Sucursal</strong></label><br>
+                <input id="txtIdSucu" type="text" readonly class="mt-2 w-100 text-center" placeholder="ID de la sucursal">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtNombreS" class="mt-2"><strong>Nombre Sucursal</strong></label><br>
+                <input id="txtNombreS" type="text" class="mt-2 w-100 text-center" placeholder="Nombre de la sucursal">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtNombreT" class="mt-2"><strong>Nombre del Titular:</strong></label><br>
+                <input id="txtNombreT" type="text" class="mt-2 w-100 text-center" placeholder="Nombre del titular">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtRfc" class="mt-2"><strong>RFC del Titular</strong></label><br>
+                <input id="txtRfc" type="text" class="mt-2 w-100 text-center" placeholder="RFC del titular">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtDom" class="mt-2"><strong>Domicilio</strong></label><br>
+                <input id="txtDom" type="text" class="mt-2 w-100 text-center" placeholder="Domicilio de la sucursal">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtCol" class="mt-2"><strong>Colonia</strong></label><br>
+                <input id="txtCol" type="text" class="mt-2 w-100 text-center" placeholder="Colonia de la sucursal">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtCiu" class="mt-2"><strong>Ciudad</strong></label><br>
+                <input id="txtCiu" type="text" class="mt-2 w-100 text-center" placeholder="Ciudad de la sucursal">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtEsta" class="mt-2"><strong>Estado</strong></label><br>
+                <select id="txtEsta" class="form-select form-select-sm col-md-6 mt-2 w-100 text-center">
+                    <option value="" disabled selected>Selecciona un estado</option>
+                    <option value="Aguascalientes">Aguascalientes</option>
+                    <option value="Baja California">Baja California</option>
+                    <option value="Baja California Sur">Baja California Sur</option>
+                    <option value="Campeche">Campeche</option>
+                    <option value="Chiapas">Chiapas</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="Coahuila">Coahuila</option>
+                    <option value="Colima">Colima</option>
+                    <option value="Durango">Durango</option>
+                    <option value="Estado de México">Estado de México</option>
+                    <option value="Guanajuato">Guanajuato</option>
+                    <option value="Guerrero">Guerrero</option>
+                    <option value="Hidalgo">Hidalgo</option>
+                    <option value="Jalisco">Jalisco</option>
+                    <option value="Michoacán">Michoacán</option>
+                    <option value="Morelos">Morelos</option>
+                    <option value="Nayarit">Nayarit</option>
+                    <option value="Nuevo León">Nuevo León</option>
+                    <option value="Oaxaca">Oaxaca</option>
+                    <option value="Puebla">Puebla</option>
+                    <option value="Querétaro">Querétaro</option>
+                    <option value="Quintana Roo">Quintana Roo</option>
+                    <option value="San Luis Potosí">San Luis Potosí</option>
+                    <option value="Sinaloa">Sinaloa</option>
+                    <option value="Sonora">Sonora</option>
+                    <option value="Tabasco">Tabasco</option>
+                    <option value="Tamaulipas">Tamaulipas</option>
+                    <option value="Tlaxcala">Tlaxcala</option>
+                    <option value="Veracruz">Veracruz</option>
+                    <option value="Yucatán">Yucatán</option>
+                    <option value="Zacatecas">Zacatecas</option>
+                </select>
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtCodP" class="mt-2"><strong>Código Postal</strong></label><br>
+                <input id="txtCodP" type="text" class="mt-2 w-100 text-center" placeholder="Código Postal de la sucursal">
+            </div>
+            <div class="col-md-3 pp">
+                <label for="txtTel" class="mt-2"><strong>Teléfono</strong></label><br>
+                <input id="txtTel" type="text" class="mt-2 w-100 text-center" placeholder="Teléfono de la sucursal">
+            </div>
+            <div class="col-md-3 pp">
+                <label for="txtLo" class="mt-2"><strong>Longitud</strong></label><br>
+                <input id="txtLo" type="text" class="mt-2 w-100 text-center" placeholder="Longitud de la sucursal">
+            </div>
+            <div class="col-md-3 pp">
+                <label for="txtLa" class="mt-2"><strong>Latitud</strong></label><br>
+                <input id="txtLa" type="text" class="mt-2 w-100 text-center" placeholder="Latitud de la sucursal">
+            </div>   
+            <div class="col-md-3 pp">
+                <label for="txtEstatus" class="mt-2"><strong>Estatus</strong></label><br>
+                <select class="form-select form-select-sm col-md-6 mt-2 text-center" id="txtEstatus" name="txtEstatus">
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option>
+                </select>
+            </div>         
+
+        </div>
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-lg" style="background-color: #29a064;" onclick="moduloProductos.addProductos();"
+                id="btnAdd">Registrar</button>
+            <button class="mt-2 btn btn-lg" style="background-color: #00b9ce;" onclick="moduloProductos.clean();" id="btnClean">Limpiar</button>
+            <button class="mt-2 btn btn-lg disabled" style="background-color: #ffee00;" onclick="moduloProductos.updateProductos();"
+                id="btnUpdate">Modificar</button>
+            <button class="mt-2 btn  btn-lg disabled" style="background-color: #eb3e3e;" onclick="moduloProductos.deleteProductos();"
+                id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+
+    <div class="card col-lg-10 p-4 m-2 shadow mb-5 rounded table-responsive-xxl">
+        <div class="d-flex m-3 justify-content-center">
+            <label for="txtBusquedaCliente" class="form-label mx-3 mt-2  text-center"><strong>Buscar Sucursales:</strong></label>
+            <input type="text" id="txtBusquedaCliente" style="border: 1px solid rgb(166, 172, 172);border-radius: 10px;">
+            <button class="btn btn-md w-25 mx-2" style="background-color: #00b9ce;"  onclick="moduloProductos.loadTabla();">Buscar</button>
+        </div>
+        <table class="table table-hover p-2">
+            <thead class="table-dark text-center">
+                <tr class="text-center">
+                    <th>Nombre</th>
+                    <th>Nombre Génerico</th>
+                    <th>Precio</th>
+                    <th>Código Barras</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody id="tblProductos"  class="text-center" style=" border-bottom: 1px">
+
+            </tbody>
+        </table>
+    </div>
+</div>

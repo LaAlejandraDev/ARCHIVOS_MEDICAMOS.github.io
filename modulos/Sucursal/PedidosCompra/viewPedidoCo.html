@@ -1,0 +1,116 @@
+<!--Modulo de Productos-->
+<link rel="stylesheet" href="../../../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<div class="container-fluid row d-flex justify-content-center m-2">
+    <div class="card col-lg-10 m-2 p-4 shadow p-3 mb-5 rounded">
+        <style>
+            .col-md-4 input{
+                border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+            }
+            .col-md-4 select{
+                border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+            }
+            .col-md-6 input{
+                border: 1px solid rgb(166, 172, 172); height: 50%; border-radius: 10px;
+            }
+        </style>
+        <h2 class="text-center">Gestión de Medicamentos</h2>
+        <div class="row g-3" >
+            <div class="col-md-4 pp">
+                <label for="txtProduId" class="mt-2"><strong>Id del Medicamento</strong></label><br>
+                <input id="txtProduId" type="text" readonly class="mt-2 w-100  text-center" placeholder="ID del medicamento">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtNombre" class="mt-2"><strong>Nombre del Medicamento</strong></label><br>
+                <input id="txtNombre" type="text" class="mt-2 w-100 text-center" placeholder="Nombre del medicamento">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtNombreGe" class="mt-2"><strong>Nombre Genérico</strong></label><br>
+                <input id="txtNombreGe" type="text" class="mt-2 w-100 text-center" placeholder="Nombre genérico">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtFormaFarma" class="mt-2"><strong>Forma Farmacéutica</strong></label><br>
+                <input id="txtFormaFarma" type="text" class="mt-2 w-100 text-center" placeholder="Forma farmacéutica">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtUnidadMe" class="mt-2"><strong>Unidad de Medida</strong></label><br>
+                <input id="txtUnidadMe" type="text" class="mt-2 w-100 text-center" placeholder="Unidad de medida">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtPresenta" class="mt-2"><strong>Presentación</strong></label><br>
+                <input id="txtPresenta" type="text" class="mt-2 w-100 text-center" placeholder="Presentación">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtPrinciIn" class="mt-2"><strong>Principal Indicación</strong></label><br>
+                <input id="txtPrinciIn" type="text" class="mt-2 w-100  text-center" placeholder="Principal indicación">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtContra" class="mt-2"><strong>Contraindicaciones</strong></label><br>
+                <input id="txtContra" type="text" class="mt-2 w-100 text-center" placeholder="Contraindicaciones">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtConcentra" class="mt-2"><strong>Concentración</strong></label><br>
+                <input id="txtConcentra" type="text" class="mt-2 w-100 text-center" placeholder="Concentración">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtUnidadesEn" class="mt-2"><strong>Unidades de Envase</strong></label><br>
+                <input id="txtUnidadesEn" type="text" class="mt-2 w-100 text-center" placeholder="Unidades de envase">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtPrecioUni" class="mt-2"><strong>Precio Unitario</strong></label><br>
+                <input id="txtPrecioUni" type="text" class="mt-2 w-100 text-center" placeholder="Precio unitario">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="imgAdd" class="mt-2"><strong>Foto</strong></label><br>
+                <input id="imgAdd" name="imgAdd" type="file" class="mt-2 w-100 text-center" style="border:none;">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtRutaFo" class="mt-2"><strong>Ruta de la Foto</strong></label><br>
+                <input id="txtRutaFo" type="text" class="mt-2 w-100 text-center" placeholder="Ruta de la foto">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtCodigoBa" class="mt-2"><strong>Código de Barras</strong></label><br>
+                <input id="txtCodigoBa" type="text" class="mt-2 w-100 text-center" placeholder="Código de barras">
+            </div>
+            <div class="col-md-4 pp">
+                <label for="txtEstatus" class="mt-2"><strong>Estatus</strong></label><br>
+                <select class="form-select form-select-sm col-md-6 mt-2 text-center" id="txtEstatus" name="txtEstatus">
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option>
+                </select>
+            </div>
+            
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-lg" style="background-color: #29a064;" onclick="moduloProductos.addProductos();"
+                id="btnAdd">Registrar</button> 
+            <button class="mt-2 btn btn-lg" style="background-color: #00b9ce;" onclick="moduloProductos.clean();" id="btnClean">Limpiar</button>
+            <button class="mt-2 btn btn-lg disabled" style="background-color: #ffee00;" onclick="moduloProductos.updateProductos();"
+                id="btnUpdate">Modificar</button>
+            <button class="mt-2 btn  btn-lg disabled" style="background-color: #eb3e3e;" onclick="moduloProductos.deleteProductos();"
+                id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+</div>
+
+    <div class="card col-lg-10 p-4 m-2 shadow mb-5 rounded table-responsive-xxl">
+        <div class="d-flex m-3 justify-content-center">
+            <label for="txtBusquedaProductos" class="form-label mx-3 mt-2  text-center"><strong>Buscar Medicamentos:</strong></label>
+            <input type="text" id="txtBusquedaProductos" style="border: 1px solid rgb(166, 172, 172); border-radius: 10px;">
+            <button class="btn btn-md w-25 mx-2" style="background-color: #00b9ce;"  onclick="moduloProductos.buscarProductos();">Buscar</button>
+        </div>
+        <table class="table table-hover p-2">
+            <thead class="table-dark text-center">
+                <tr class="text-center">
+                    <th>Nombre</th>
+                    <th>Nombre Génerico</th>
+                    <th>Precio</th>
+                    <th>Código Barras</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody id="tblProductos"  class="text-center" style=" border-bottom: 1px">
+
+            </tbody>
+        </table>
+    </div>
+</div>

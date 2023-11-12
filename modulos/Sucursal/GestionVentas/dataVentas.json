@@ -1,0 +1,112 @@
+[
+    {
+        "idVenta": "RF061",
+        "producto": "Atorvastatina",
+        "cantidad": "1",
+        "precio": "$8.90",
+        "fechaActual": "2023-08-05",
+        "horaActual": "10:00:00",
+        "empleado": "Sofía Hernández Gómez",
+        "cliente": "Nicolás Ramírez Gómez",
+        "estatus": "Activo"
+    },
+    {
+        "idVenta": "RF062",
+        "producto": "Paracetamol",
+        "cantidad": "3",
+        "precio": "$50.75",
+        "fechaActual": "2023-08-05",
+        "horaActual": "10:00:00",
+        "empleado": "Diego Martínez Pérez",
+        "cliente": "Daniel Sánchez González",
+        "estatus": "Activo"
+    },
+    {
+        "idVenta": "RF063",
+        "producto": "Omeprazol, Amoxicilina",
+        "cantidad": "2",
+        "precio": "$35.20",
+        "fechaActual": "2023-08-05",
+        "horaActual": "10:00:00",
+        "empleado": "Valentina López Ramírez",
+        "cliente": "Valeria Gómez Hernández",
+        "estatus": "Activo"
+    },
+    {
+        "idVenta": "RF064",
+        "producto": "Paracetamol, Simvastatina",
+        "cantidad": "4",
+        "precio": "$60.00",
+        "fechaActual": "2023-08-05",
+        "horaActual": "10:00:00",
+        "empleado": "Andrés García Fuentes",
+        "cliente": "Fernando Martínez López",
+        "estatus": "Activo"
+    },
+    {
+        "idVenta": "RF065",
+        "producto": "Ibuprofeno",
+        "cantidad": "1",
+        "precio": "$25.50",
+        "fechaActual": "2023-08-05",
+        "horaActual": "10:00:00",
+        "empleado": "Lucía Ortega Hernández",
+        "cliente": "Camila López García",
+        "estatus": "Activo"
+    },
+    {
+        "idVenta": "RF066",
+        "producto": "Losartán",
+        "cantidad": "5",
+        "precio": "$10.75",
+        "fechaActual": "2023-08-05",
+        "horaActual": "10:00:00",
+        "empleado": "Juan Ramírez González",
+        "cliente": "Sebastián García López",
+        "estatus": "Activo"
+    },
+    {
+        "idVenta": "RF067",
+        "producto": "Paracetamol, Omeprazol, Loratadina",
+        "cantidad": "2",
+        "precio": "$40.30",
+        "fechaActual": "2023-08-05",
+        "horaActual": "10:00:00",
+        "empleado": "María Gómez López",
+        "cliente": "Ximena Ramírez Gómez",
+        "estatus": "Activo"
+    },
+    {
+        "idVenta": "RF068",
+        "producto": "Ibuprofeno",
+        "cantidad": "1",
+        "precio": "$15.60",
+        "fechaActual": "2023-08-05",
+        "horaActual": "10:00:00",
+        "empleado": "Carlos Hernández Martínez",
+        "cliente": "Adrián Hernández Martínez",
+        "estatus": "Activo"
+    },
+    {
+        "idVenta": "RF069",
+        "producto": "Metformina",
+        "cantidad": "3",
+        "precio": "$30.00",
+        "fechaActual": "2023-08-05",
+        "horaActual": "10:00:00",
+        "empleado": "Isabella Martínez Gómez",
+        "cliente": "Valentina Martínez García",
+        "estatus": "Activo"
+    },
+    {
+        "idVenta": "RF0610",
+        "producto": "Paracetamol, Ibuprofeno, Aspirina",
+        "cantidad": "2",
+        "precio": "$20.50",
+        "fechaActual": "2023-08-05",
+        "horaActual": "10:00:00",
+        "empleado": "Felipe López Hernández",
+        "cliente": "Mateo López Hernández",
+        "estatus": "Activo"
+    }
+]
